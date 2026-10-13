@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, s = 0;
+    cout << "Ingrese N: "; cin >> n;
+    for(int i = 1; i <= n; i+=2) {
+        s += i;
+    }
+    cout << "Suma de impares = " << s;
+    return 0;
+}
