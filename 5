@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    long long f = 1; // Usamos long long porque crece rapido
+    cout << "Ingrese N: "; cin >> n;
+    for(int i = 1; i <= n; i++) {
+        f *= i;
+    }
+    cout << "Factorial/Producto = " << f;
+    return 0;
+}
