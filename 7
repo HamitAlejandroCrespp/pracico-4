@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int n; float x, s = 0, f = 1;
+    int signo = 1;
+    cout << "Ingrese X y N: "; cin >> x >> n;
+    for(int i = 1; i <= n; i++) {
+        f *= i; // Acumulamos el factorial
+        s += signo * (pow(x, i) / f);
+        signo *= -1; // Cambiamos el signo para la siguiente vuelta
+    }
+    cout << "Resultado serie = " << s;
+    return 0;
+}
