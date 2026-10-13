@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath> // Para la funcion pow()
+using namespace std;
+int main() {
+    int n; float x, s = 0;
+    cout << "Ingrese X y N: "; cin >> x >> n;
+    for(int i = 1; i <= n; i++) {
+        s += pow(x, i);
+    }
+    cout << "Suma = " << s;
+    return 0;
+}
